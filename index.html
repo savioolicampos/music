@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicArt</title>
+    <link rel="stylesheet" href="stylesheet/style-main.css">
+</head>
+<body>
+    <header id="header">
+        <h1>MusicArt</h1>
+        <ul id="menu" type="none">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+        </ul>
+    </header>
+
+    <section id="section">
+        <picture>
+            <a href="paramore.html"><img id="paramore-folder" src="images/paramore/paramore-folder.png" alt="Artista: Paramore"></a>
+        </picture>
+    </section>
+
+    <footer id="footer">
+        &copy; MusicArt
+    </footer>
+
+    <script>
+        var sc = document.getElementById('section')
+        var folder = document.getElementById('paramore-folder')
+
+        folder.addEventListener('mouseenter', enter)
+        folder.addEventListener('mouseout', out)
+
+        function enter() {
+            sc.style.background = "url('../images/paramore/paramore-wallpaper.jpg') center"
+        }
+
+        function out() {
+            sc.style.background = '#282828';
+        }
+    </script>
+</body>
+</html>

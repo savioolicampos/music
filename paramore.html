@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicArt: Paramore</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>MusicArt</h1>
+        <ul id="menu" type="none">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+        </ul>
+    </header>
+    <section id="section">
+        <table class="albuns" border="3">
+            <tr>
+                <th colspan="3"><strong>After Laughter</strong></th>
+            </tr>
+
+            <tr>
+                <th rowspan="8"><img src="images/Paramore/after-laughter.jpg" alt="After Laughter: Paramore">
+                </th>
+            </tr>
+            
+            <tr>
+                <th><strong>Artista</strong></th>
+                <td>Paramore</td>
+            </tr>
+
+            <tr>
+                <th><strong>Gênero</strong></th>
+                <td>Pop/Rock</td>
+            </tr>
+
+            <tr>
+                <th><strong>Ano</strong></th>
+                <td>2017</td>
+            </tr>
+
+            <tr>
+                <th colspan="2"><strong>Faixas</strong></th>
+            </tr>
+
+            <tr>
+                <td colspan="2">Hard Times</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Rose-colored Boy</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Fake Happy</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="albuns" border="3">
+            <tr>
+                <th colspan="3"><strong>Paramore: Deluxe Edition</strong></th>
+            </tr>
+
+            <tr>
+                <th rowspan="13"><img src="images/paramore/self-titled-deluxe.jpg" alt="After Laughter - Paramore" id="tbpd"></th>
+            </tr>
+            
+            <tr>
+                <th><strong>Artista</strong></th>
+                <td>Paramore</td>
+            </tr>
+
+            <tr>
+                <th><strong>Gênero</strong></th>
+                <td>Pop/Rock</td>
+            </tr>
+
+            <tr>
+                <th><strong>Ano</strong></th>
+                <td>2013</td>
+            </tr>
+
+            <tr>
+                <th colspan="2"><strong>Faixas</strong></th>
+            </tr>
+
+            <tr>
+                <td colspan="2">Last Hope | Live</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Native Tongue</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Still Into You | Live</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Decode | Live</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">The Only Exception | Live</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Brick By Boring Brick | Live</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Proof | Live</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Ain't It Fun | Live</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer id="footer">
+        &copy; MusicArt
+    </footer>
+
+    <script>
+        var cover = document.getElementById('tbal');
+        cover.addEventListener('mouseenter', entrar);
+        cover.addEventListener('mouseout', sair);
+
+        function entrar() {
+            cover.style.width = '200px';
+        }
+
+        function sair() {
+            cover.style.width = '150px';
+        }
+
+    </script>
+</body>
+</html>
